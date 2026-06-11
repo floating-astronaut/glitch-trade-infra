@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-06-11 21:41:35 UTC
-**Uptime:** up 4 days, 22 hours, 38 minutes
-**Load avg:** 0.22, 0.39, 1.07
+**Generated:** 2026-06-11 21:45:16 UTC
+**Uptime:** up 4 days, 22 hours, 42 minutes
+**Load avg:** 0.08, 0.26, 0.87
 
 ## Running services (ours)
 
@@ -97,7 +97,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.8Gi       1.1Gi       1.5Gi        74Mi       1.5Gi       2.7Gi
+Mem:           3.8Gi       1.2Gi       1.5Gi        74Mi       1.5Gi       2.6Gi
 Swap:          2.0Gi       513Mi       1.5Gi
 ```
 
@@ -114,7 +114,7 @@ Swap:          2.0Gi       513Mi       1.5Gi
 /home/ubuntu/.ssh                              (not a git repo)
 /home/ubuntu/backups                           (not a git repo)
 /home/ubuntu/glitch-trade-app                  git: git@github.com:Nuraveda-Labs/glitch-trade-app.git
-/home/ubuntu/glitch-trade-infra                (not a git repo)
+/home/ubuntu/glitch-trade-infra                git: git@github.com:Nuraveda-Labs/glitch-trade-infra.git
 /home/ubuntu/snap                              (not a git repo)
 
 ```
@@ -124,4 +124,5 @@ Swap:          2.0Gi       513Mi       1.5Gi
 ```
 0 3 * * * /home/ubuntu/backups/backup-host-postgres.sh
 30 3 * * * /home/ubuntu/backups/backup-docker-postgres.sh
+47 3 * * * cd /home/ubuntu/glitch-trade-infra && bash sync.sh >> /home/ubuntu/glitch-trade-infra/sync.log 2>&1
 ```
