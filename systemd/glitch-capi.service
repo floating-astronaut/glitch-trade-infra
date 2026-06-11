@@ -1,0 +1,20 @@
+[Unit]
+Description=Glitch Executor Unified CAPI Server
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/glitchexecutor
+Environment=PYTHONPATH=/usr/lib/python3/dist-packages
+# Secrets migrated from hardcoded values in capi_server.py to env file 2026-05-18
+# per section-5 of SERVER_CONSOLIDATION_CHECKLIST.md.
+EnvironmentFile=/etc/glitch-capi/glitch-capi.env
+ExecStart=/usr/bin/python3 /var/www/glitchexecutor/capi_server.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

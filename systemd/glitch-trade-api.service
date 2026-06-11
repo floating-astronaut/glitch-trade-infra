@@ -1,0 +1,32 @@
+# /etc/systemd/system/glitch-trade-api.service
+[Unit]
+Description=Glitch Trade API (FastAPI) — FundingPips Zero progress dashboard
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=glitch-trade
+Group=glitch-trade
+WorkingDirectory=/opt/glitch-trade-api
+EnvironmentFile=/etc/glitch-trade-api/glitch-trade-api.env
+ExecStart=/opt/glitch-trade-api/.venv/bin/python -m glitch_trade_api.main
+Restart=on-failure
+RestartSec=5
+MemoryMax=512M
+LimitNOFILE=4096
+
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/glitch-trade-api /var/log/glitch-trade-api
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,2 @@
+0 3 * * * /home/ubuntu/backups/backup-host-postgres.sh
+30 3 * * * /home/ubuntu/backups/backup-docker-postgres.sh
