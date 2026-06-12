@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-06-11 21:45:16 UTC
-**Uptime:** up 4 days, 22 hours, 42 minutes
-**Load avg:** 0.08, 0.26, 0.87
+**Generated:** 2026-06-12 03:47:01 UTC
+**Uptime:** up 5 days, 4 hours, 44 minutes
+**Load avg:** 0.39, 0.21, 0.27
 
 ## Running services (ours)
 
@@ -31,11 +31,11 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                  PORTS
-glitch-payment        glitchexecutor-payment          Up 15 hours (healthy)   127.0.0.1:5002->5002/tcp
-glitch-admin-api      glitchexecutor-admin_api        Up 4 days (healthy)     127.0.0.1:5004->5003/tcp
-glitch-postgres       postgres:16-alpine              Up 4 days (healthy)     5432/tcp
-glitch-redis          redis:7-alpine                  Up 4 days (healthy)     6379/tcp
-glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 4 days               2375/tcp
+glitch-payment        glitchexecutor-payment          Up 21 hours (healthy)   127.0.0.1:5002->5002/tcp
+glitch-admin-api      glitchexecutor-admin_api        Up 5 days (healthy)     127.0.0.1:5004->5003/tcp
+glitch-postgres       postgres:16-alpine              Up 5 days (healthy)     5432/tcp
+glitch-redis          redis:7-alpine                  Up 5 days (healthy)     6379/tcp
+glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 5 days               2375/tcp
 ```
 
 ## Listening ports
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-05 01:39:03+00:00 (VALID: 85 days)
+    Expiry Date: 2026-09-05 01:39:03+00:00 (VALID: 84 days)
 ```
 
 ## Postgres databases
@@ -97,8 +97,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.8Gi       1.2Gi       1.5Gi        74Mi       1.5Gi       2.6Gi
-Swap:          2.0Gi       513Mi       1.5Gi
+Mem:           3.8Gi       1.9Gi       343Mi        98Mi       2.0Gi       1.9Gi
+Swap:          2.0Gi       408Mi       1.6Gi
 ```
 
 ## Project directories
