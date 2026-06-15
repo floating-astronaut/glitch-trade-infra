@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-06-14 03:47:01 UTC
-**Uptime:** up 1 week, 4 hours, 44 minutes
-**Load avg:** 0.16, 0.41, 1.34
+**Generated:** 2026-06-15 03:47:01 UTC
+**Uptime:** up 1 week, 1 day, 4 hours, 44 minutes
+**Load avg:** 1.27, 1.36, 1.23
 
 ## Running services (ours)
 
@@ -30,12 +30,12 @@ Hand-maintained notes live in [README.md](README.md).
 ## Docker containers
 
 ```
-NAMES                 IMAGE                           STATUS                  PORTS
-glitch-payment        glitchexecutor-payment          Up 47 hours (healthy)   127.0.0.1:5002->5002/tcp
-glitch-admin-api      glitchexecutor-admin_api        Up 7 days (healthy)     127.0.0.1:5004->5003/tcp
-glitch-postgres       postgres:16-alpine              Up 7 days (healthy)     5432/tcp
-glitch-redis          redis:7-alpine                  Up 7 days (healthy)     6379/tcp
-glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 7 days               2375/tcp
+NAMES                 IMAGE                           STATUS                PORTS
+glitch-payment        glitchexecutor-payment          Up 2 days (healthy)   127.0.0.1:5002->5002/tcp
+glitch-admin-api      glitchexecutor-admin_api        Up 8 days (healthy)   127.0.0.1:5004->5003/tcp
+glitch-postgres       postgres:16-alpine              Up 8 days (healthy)   5432/tcp
+glitch-redis          redis:7-alpine                  Up 8 days (healthy)   6379/tcp
+glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 8 days             2375/tcp
 ```
 
 ## Listening ports
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-05 01:39:03+00:00 (VALID: 82 days)
+    Expiry Date: 2026-09-05 01:39:03+00:00 (VALID: 81 days)
 ```
 
 ## Postgres databases
@@ -97,8 +97,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.8Gi       1.4Gi       439Mi        99Mi       2.4Gi       2.4Gi
-Swap:          2.0Gi       324Mi       1.7Gi
+Mem:           3.8Gi       2.1Gi       142Mi        99Mi       1.9Gi       1.7Gi
+Swap:          2.0Gi       339Mi       1.7Gi
 ```
 
 ## Project directories
