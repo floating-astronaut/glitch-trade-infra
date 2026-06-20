@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-06-19 03:47:01 UTC
-**Uptime:** up 1 week, 5 days, 4 hours, 44 minutes
-**Load avg:** 2.59, 2.53, 2.91
+**Generated:** 2026-06-20 03:47:01 UTC
+**Uptime:** up 1 week, 6 days, 4 hours, 44 minutes
+**Load avg:** 3.74, 4.02, 3.87
 
 ## Running services (ours)
 
@@ -31,11 +31,11 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                 PORTS
-glitch-payment        glitchexecutor-payment          Up 6 days (healthy)    127.0.0.1:5002->5002/tcp
-glitch-admin-api      glitchexecutor-admin_api        Up 12 days (healthy)   127.0.0.1:5004->5003/tcp
-glitch-postgres       postgres:16-alpine              Up 12 days (healthy)   5432/tcp
-glitch-redis          redis:7-alpine                  Up 12 days (healthy)   6379/tcp
-glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 12 days             2375/tcp
+glitch-payment        glitchexecutor-payment          Up 7 days (healthy)    127.0.0.1:5002->5002/tcp
+glitch-admin-api      glitchexecutor-admin_api        Up 13 days (healthy)   127.0.0.1:5004->5003/tcp
+glitch-postgres       postgres:16-alpine              Up 13 days (healthy)   5432/tcp
+glitch-redis          redis:7-alpine                  Up 13 days (healthy)   6379/tcp
+glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 13 days             2375/tcp
 ```
 
 ## Listening ports
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-05 01:39:03+00:00 (VALID: 77 days)
+    Expiry Date: 2026-09-05 01:39:03+00:00 (VALID: 76 days)
 ```
 
 ## Postgres databases
@@ -90,15 +90,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   14G   34G  29% /
+/dev/root        48G   14G   34G  30% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.8Gi       2.1Gi       110Mi        99Mi       2.0Gi       1.7Gi
-Swap:          2.0Gi       464Mi       1.5Gi
+Mem:           3.8Gi       1.3Gi       982Mi       101Mi       1.9Gi       2.5Gi
+Swap:          2.0Gi       467Mi       1.5Gi
 ```
 
 ## Project directories
