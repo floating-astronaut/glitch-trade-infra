@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-07-19 03:47:01 UTC
-**Uptime:** up 3 weeks, 4 days, 2 hours, 13 minutes
-**Load avg:** 0.16, 0.07, 0.19
+**Generated:** 2026-07-20 03:47:01 UTC
+**Uptime:** up 3 weeks, 5 days, 2 hours, 13 minutes
+**Load avg:** 3.99, 3.15, 1.58
 
 ## Running services (ours)
 
@@ -31,7 +31,7 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                 PORTS
-glitch-payment        glitchexecutor-payment          Up 12 days (healthy)   127.0.0.1:5002->5002/tcp
+glitch-payment        glitchexecutor-payment          Up 13 days (healthy)   127.0.0.1:5002->5002/tcp
 glitch-admin-api      glitchexecutor-admin_api        Up 3 weeks (healthy)   127.0.0.1:5004->5003/tcp
 glitch-postgres       postgres:16-alpine              Up 3 weeks (healthy)   5432/tcp
 glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 3 weeks             2375/tcp
@@ -45,7 +45,7 @@ glitch-redis          redis:7-alpine                  Up 3 weeks (healthy)   637
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
-127.0.0.1:11505              proc=containerd
+127.0.0.1:26347              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -75,7 +75,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 64 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 63 days)
 ```
 
 ## Postgres databases
@@ -89,15 +89,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   19G   29G  41% /
+/dev/root        48G   21G   28G  43% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.5Gi       436Mi       177Mi       2.3Gi       2.2Gi
-Swap:          2.0Gi       1.6Gi       423Mi
+Mem:           3.7Gi       1.7Gi       580Mi       111Mi       1.9Gi       2.0Gi
+Swap:          2.0Gi       1.7Gi       269Mi
 ```
 
 ## Project directories
@@ -107,6 +107,7 @@ Swap:          2.0Gi       1.6Gi       423Mi
 /home/ubuntu/.appstoreconnect                  (not a git repo)
 /home/ubuntu/.cache                            (not a git repo)
 /home/ubuntu/.claude                           (not a git repo)
+/home/ubuntu/.cloakbrowser                     (not a git repo)
 /home/ubuntu/.codegraph                        (not a git repo)
 /home/ubuntu/.codex                            (not a git repo)
 /home/ubuntu/.config                           (not a git repo)
@@ -122,6 +123,7 @@ Swap:          2.0Gi       1.6Gi       423Mi
 /home/ubuntu/glitch-trade-core                 git: git@github.com:Nuraveda-Labs/glitch-trade-core.git
 /home/ubuntu/glitch-trade-docs                 git: git@github.com:Nuraveda-Labs/glitch-trade-docs.git
 /home/ubuntu/glitch-trade-infra                git: git@github.com:Nuraveda-Labs/glitch-trade-infra.git
+/home/ubuntu/tools                             (not a git repo)
 
 ```
 
