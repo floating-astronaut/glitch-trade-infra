@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-07-22 03:47:01 UTC
-**Uptime:** up 4 weeks, 2 hours, 13 minutes
-**Load avg:** 0.11, 0.09, 0.42
+**Generated:** 2026-07-23 03:47:01 UTC
+**Uptime:** up 4 weeks, 1 day, 2 hours, 13 minutes
+**Load avg:** 0.21, 0.13, 0.17
 
 ## Running services (ours)
 
@@ -45,8 +45,8 @@ glitch-redis          redis:7-alpine                  Up 4 weeks (healthy)   637
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
+127.0.0.1:2897               proc=containerd
 127.0.0.1:3112               proc=python
-127.0.0.1:3839               proc=containerd
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
 127.0.0.1:5002               proc=docker-proxy
@@ -75,7 +75,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 61 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 60 days)
 ```
 
 ## Postgres databases
@@ -96,8 +96,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.4Gi       875Mi       111Mi       1.9Gi       2.4Gi
-Swap:          2.0Gi       1.8Gi       232Mi
+Mem:           3.7Gi       1.5Gi       427Mi       110Mi       2.3Gi       2.3Gi
+Swap:          2.0Gi       1.6Gi       447Mi
 ```
 
 ## Project directories
