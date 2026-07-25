@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-07-24 03:47:01 UTC
-**Uptime:** up 4 weeks, 2 days, 2 hours, 13 minutes
-**Load avg:** 4.00, 3.78, 2.67
+**Generated:** 2026-07-25 03:47:01 UTC
+**Uptime:** up 4 weeks, 3 days, 2 hours, 13 minutes
+**Load avg:** 0.43, 0.32, 0.98
 
 ## Running services (ours)
 
@@ -45,7 +45,6 @@ glitch-redis          redis:7-alpine                  Up 4 weeks (healthy)   637
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
-127.0.0.1:17585              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -53,6 +52,7 @@ glitch-redis          redis:7-alpine                  Up 4 weeks (healthy)   637
 127.0.0.1:5004               proc=docker-proxy
 127.0.0.1:5432               proc=postgres
 127.0.0.1:6000               proc=gunicorn
+127.0.0.1:6181               proc=containerd
 127.0.0.1:8125               proc=netdata
 127.0.0.53%lo:53             proc=systemd-resolve
 127.0.0.54:53                proc=systemd-resolve
@@ -75,7 +75,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 59 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 58 days)
 ```
 
 ## Postgres databases
@@ -89,15 +89,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   21G   27G  44% /
+/dev/root        48G   22G   26G  47% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       2.0Gi       420Mi       113Mi       1.7Gi       1.7Gi
-Swap:          2.0Gi       1.6Gi       416Mi
+Mem:           3.7Gi       1.3Gi       1.1Gi       112Mi       1.8Gi       2.4Gi
+Swap:          2.0Gi       1.7Gi       257Mi
 ```
 
 ## Project directories
@@ -124,6 +124,7 @@ Swap:          2.0Gi       1.6Gi       416Mi
 /home/ubuntu/glitch-trade-core                 git: git@github.com:Nuraveda-Labs/glitch-trade-core.git
 /home/ubuntu/glitch-trade-docs                 git: git@github.com:Nuraveda-Labs/glitch-trade-docs.git
 /home/ubuntu/glitch-trade-infra                git: git@github.com:Nuraveda-Labs/glitch-trade-infra.git
+/home/ubuntu/keystores                         (not a git repo)
 /home/ubuntu/tools                             (not a git repo)
 
 ```
