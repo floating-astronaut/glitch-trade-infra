@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-07-27 03:47:01 UTC
-**Uptime:** up 4 weeks, 5 days, 2 hours, 13 minutes
-**Load avg:** 4.75, 1.49, 0.58
+**Generated:** 2026-07-28 03:47:01 UTC
+**Uptime:** up 4 weeks, 6 days, 2 hours, 13 minutes
+**Load avg:** 0.31, 1.68, 2.22
 
 ## Running services (ours)
 
@@ -31,7 +31,7 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                 PORTS
-glitch-payment        glitchexecutor-payment          Up 2 weeks (healthy)   127.0.0.1:5002->5002/tcp
+glitch-payment        glitchexecutor-payment          Up 3 weeks (healthy)   127.0.0.1:5002->5002/tcp
 glitch-admin-api      glitchexecutor-admin_api        Up 4 weeks (healthy)   127.0.0.1:5004->5003/tcp
 glitch-postgres       postgres:16-alpine              Up 4 weeks (healthy)   5432/tcp
 glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 4 weeks             2375/tcp
@@ -45,7 +45,7 @@ glitch-redis          redis:7-alpine                  Up 4 weeks (healthy)   637
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
-127.0.0.1:2503               proc=containerd
+127.0.0.1:26625              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 56 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 55 days)
 ```
 
 ## Postgres databases
@@ -90,15 +90,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   23G   26G  48% /
+/dev/root        48G   23G   25G  48% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.9Gi       153Mi       112Mi       2.1Gi       1.9Gi
-Swap:          2.0Gi       569Mi       1.4Gi
+Mem:           3.7Gi       1.9Gi       360Mi       112Mi       1.9Gi       1.9Gi
+Swap:          2.0Gi       616Mi       1.4Gi
 ```
 
 ## Project directories
