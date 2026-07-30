@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-07-29 03:47:02 UTC
-**Uptime:** up 5 weeks, 2 hours, 13 minutes
-**Load avg:** 0.19, 0.12, 0.57
+**Generated:** 2026-07-30 03:47:01 UTC
+**Uptime:** up 5 weeks, 1 day, 2 hours, 13 minutes
+**Load avg:** 0.11, 0.07, 0.18
 
 ## Running services (ours)
 
@@ -45,7 +45,8 @@ glitch-redis          redis:7-alpine                  Up 5 weeks (healthy)   637
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
-127.0.0.1:2653               proc=containerd
+127.0.0.1:14737              proc=code-1b6a188127
+127.0.0.1:21763              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -75,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 54 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 53 days)
 ```
 
 ## Postgres databases
@@ -89,15 +90,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   26G   23G  53% /
+/dev/root        48G   28G   21G  58% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.3Gi       1.6Gi       111Mi       1.3Gi       2.5Gi
-Swap:          2.0Gi       679Mi       1.3Gi
+Mem:           3.7Gi       1.4Gi       261Mi       112Mi       2.5Gi       2.4Gi
+Swap:          2.0Gi       602Mi       1.4Gi
 ```
 
 ## Project directories
@@ -112,14 +113,17 @@ Swap:          2.0Gi       679Mi       1.3Gi
 /home/ubuntu/.codegraph                        (not a git repo)
 /home/ubuntu/.codex                            (not a git repo)
 /home/ubuntu/.config                           (not a git repo)
+/home/ubuntu/.copilot                          (not a git repo)
 /home/ubuntu/.cursor                           (not a git repo)
 /home/ubuntu/.cursor-server                    (not a git repo)
+/home/ubuntu/.dotnet                           (not a git repo)
 /home/ubuntu/.gradle                           (not a git repo)
 /home/ubuntu/.gunicorn                         (not a git repo)
 /home/ubuntu/.kimi-code                        (not a git repo)
 /home/ubuntu/.local                            (not a git repo)
 /home/ubuntu/.npm                              (not a git repo)
 /home/ubuntu/.ssh                              (not a git repo)
+/home/ubuntu/.vscode-server                    (not a git repo)
 /home/ubuntu/backups                           (not a git repo)
 /home/ubuntu/decommission-backup-oldbox        (not a git repo)
 /home/ubuntu/glitch-trade-app                  git: git@github.com:Nuraveda-Labs/glitch-trade-app.git
