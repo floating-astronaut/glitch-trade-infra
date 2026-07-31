@@ -1,12 +1,12 @@
-# glitch-trade-infra — Server Inventory (aws-glitchexecutor)
+# glitch-trade-infra — Server Inventory (aws-glitchexecutor-new)
 
 Single source of truth for what runs on this box. Hand-maintained — update
 whenever you add, remove, enable, or disable something. Live machine state
 is auto-captured daily in [SNAPSHOT.md](SNAPSHOT.md) (do not edit that one).
 
-**Host:** AWS EC2 — 3.151.253.206 (`ssh aws-glitchexecutor`, login `ubuntu`)
+**Host:** AWS EC2 — 3.128.106.96 (`ssh aws-glitchexecutor-new`, login `ubuntu`) — account 774075583717, us-east-2, instance `i-0e266cb94127ae86e`. Migrated here 2026-06-24; the old `3.151.253.206` is NOT this box.
 **Role:** Glitch Executor / Trade — prop-firm trading dashboard + admin platform. This box is Trade/GE only.
-**Last reviewed:** 2026-06-11
+**Last reviewed:** 2026-07-31
 
 ---
 
