@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-02 03:47:01 UTC
-**Uptime:** up 5 weeks, 4 days, 2 hours, 13 minutes
-**Load avg:** 0.05, 0.06, 0.37
+**Generated:** 2026-08-03 03:47:01 UTC
+**Uptime:** up 5 weeks, 5 days, 2 hours, 13 minutes
+**Load avg:** 0.14, 0.07, 0.13
 
 ## Running services (ours)
 
@@ -30,12 +30,12 @@ Hand-maintained notes live in [README.md](README.md).
 ## Docker containers
 
 ```
-NAMES                 IMAGE                           STATUS                  PORTS
-glitch-payment        glitchexecutor-payment          Up 26 hours (healthy)   127.0.0.1:5002->5002/tcp
-glitch-admin-api      glitchexecutor-admin_api        Up 5 weeks (healthy)    127.0.0.1:5004->5003/tcp
-glitch-postgres       postgres:16-alpine              Up 5 weeks (healthy)    5432/tcp
-glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 5 weeks              2375/tcp
-glitch-redis          redis:7-alpine                  Up 5 weeks (healthy)    6379/tcp
+NAMES                 IMAGE                           STATUS                 PORTS
+glitch-payment        glitchexecutor-payment          Up 2 days (healthy)    127.0.0.1:5002->5002/tcp
+glitch-admin-api      glitchexecutor-admin_api        Up 5 weeks (healthy)   127.0.0.1:5004->5003/tcp
+glitch-postgres       postgres:16-alpine              Up 5 weeks (healthy)   5432/tcp
+glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 5 weeks             2375/tcp
+glitch-redis          redis:7-alpine                  Up 5 weeks (healthy)   6379/tcp
 ```
 
 ## Listening ports
@@ -45,8 +45,8 @@ glitch-redis          redis:7-alpine                  Up 5 weeks (healthy)    63
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
-127.0.0.1:10281              proc=containerd
 127.0.0.1:14737              proc=code-1b6a188127
+127.0.0.1:26647              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 50 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 49 days)
 ```
 
 ## Postgres databases
@@ -90,15 +90,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   29G   20G  60% /
+/dev/root        48G   29G   19G  61% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.7Gi       752Mi       109Mi       1.7Gi       2.1Gi
-Swap:          2.0Gi       997Mi       1.0Gi
+Mem:           3.7Gi       1.6Gi       817Mi       111Mi       1.7Gi       2.1Gi
+Swap:          2.0Gi       970Mi       1.1Gi
 ```
 
 ## Project directories
@@ -117,6 +117,7 @@ Swap:          2.0Gi       997Mi       1.0Gi
 /home/ubuntu/.cursor                           (not a git repo)
 /home/ubuntu/.cursor-server                    (not a git repo)
 /home/ubuntu/.dotnet                           (not a git repo)
+/home/ubuntu/.gnupg                            (not a git repo)
 /home/ubuntu/.gradle                           (not a git repo)
 /home/ubuntu/.gunicorn                         (not a git repo)
 /home/ubuntu/.kimi-code                        (not a git repo)
