@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-03 03:47:01 UTC
-**Uptime:** up 5 weeks, 5 days, 2 hours, 13 minutes
-**Load avg:** 0.14, 0.07, 0.13
+**Generated:** 2026-08-04 03:47:01 UTC
+**Uptime:** up 5 weeks, 6 days, 2 hours, 13 minutes
+**Load avg:** 3.90, 3.74, 2.85
 
 ## Running services (ours)
 
@@ -31,7 +31,7 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                 PORTS
-glitch-payment        glitchexecutor-payment          Up 2 days (healthy)    127.0.0.1:5002->5002/tcp
+glitch-payment        glitchexecutor-payment          Up 3 days (healthy)    127.0.0.1:5002->5002/tcp
 glitch-admin-api      glitchexecutor-admin_api        Up 5 weeks (healthy)   127.0.0.1:5004->5003/tcp
 glitch-postgres       postgres:16-alpine              Up 5 weeks (healthy)   5432/tcp
 glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 5 weeks             2375/tcp
@@ -46,7 +46,6 @@ glitch-redis          redis:7-alpine                  Up 5 weeks (healthy)   637
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
 127.0.0.1:14737              proc=code-1b6a188127
-127.0.0.1:26647              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -54,6 +53,7 @@ glitch-redis          redis:7-alpine                  Up 5 weeks (healthy)   637
 127.0.0.1:5004               proc=docker-proxy
 127.0.0.1:5432               proc=postgres
 127.0.0.1:6000               proc=gunicorn
+127.0.0.1:7063               proc=containerd
 127.0.0.1:8125               proc=netdata
 127.0.0.53%lo:53             proc=systemd-resolve
 127.0.0.54:53                proc=systemd-resolve
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 49 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 48 days)
 ```
 
 ## Postgres databases
@@ -97,8 +97,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.6Gi       817Mi       111Mi       1.7Gi       2.1Gi
-Swap:          2.0Gi       970Mi       1.1Gi
+Mem:           3.7Gi       1.4Gi       452Mi       111Mi       2.3Gi       2.3Gi
+Swap:          2.0Gi       665Mi       1.4Gi
 ```
 
 ## Project directories
