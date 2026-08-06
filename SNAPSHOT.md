@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-05 03:47:01 UTC
-**Uptime:** up 6 weeks, 2 hours, 13 minutes
-**Load avg:** 0.26, 0.23, 0.93
+**Generated:** 2026-08-06 03:47:01 UTC
+**Uptime:** up 6 weeks, 1 day, 2 hours, 13 minutes
+**Load avg:** 0.18, 0.12, 0.25
 
 ## Running services (ours)
 
@@ -31,7 +31,7 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                 PORTS
-glitch-payment        glitchexecutor-payment          Up 4 days (healthy)    127.0.0.1:5002->5002/tcp
+glitch-payment        glitchexecutor-payment          Up 5 days (healthy)    127.0.0.1:5002->5002/tcp
 glitch-admin-api      glitchexecutor-admin_api        Up 6 weeks (healthy)   127.0.0.1:5004->5003/tcp
 glitch-postgres       postgres:16-alpine              Up 6 weeks (healthy)   5432/tcp
 glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 6 weeks             2375/tcp
@@ -46,7 +46,7 @@ glitch-redis          redis:7-alpine                  Up 6 weeks (healthy)   637
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
 127.0.0.1:14737              proc=code-1b6a188127
-127.0.0.1:22885              proc=containerd
+127.0.0.1:30989              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
@@ -76,13 +76,13 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 47 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 46 days)
 ```
 
 ## Postgres databases
 
 ```
-glitch_trade  (111 MB)
+glitch_trade  (112 MB)
 postgres  (7678 kB)
 ```
 
@@ -90,15 +90,15 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   29G   19G  61% /
+/dev/root        48G   30G   18G  63% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.3Gi       611Mi       110Mi       2.2Gi       2.4Gi
-Swap:          2.0Gi       719Mi       1.3Gi
+Mem:           3.7Gi       1.5Gi       449Mi       110Mi       2.2Gi       2.2Gi
+Swap:          2.0Gi       717Mi       1.3Gi
 ```
 
 ## Project directories
