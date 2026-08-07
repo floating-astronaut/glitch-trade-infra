@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-06 03:47:01 UTC
-**Uptime:** up 6 weeks, 1 day, 2 hours, 13 minutes
-**Load avg:** 0.18, 0.12, 0.25
+**Generated:** 2026-08-07 03:47:01 UTC
+**Uptime:** up 6 weeks, 2 days, 2 hours, 14 minutes
+**Load avg:** 4.73, 3.54, 1.84
 
 ## Running services (ours)
 
@@ -31,7 +31,7 @@ Hand-maintained notes live in [README.md](README.md).
 
 ```
 NAMES                 IMAGE                           STATUS                 PORTS
-glitch-payment        glitchexecutor-payment          Up 5 days (healthy)    127.0.0.1:5002->5002/tcp
+glitch-payment        glitchexecutor-payment          Up 6 days (healthy)    127.0.0.1:5002->5002/tcp
 glitch-admin-api      glitchexecutor-admin_api        Up 6 weeks (healthy)   127.0.0.1:5004->5003/tcp
 glitch-postgres       postgres:16-alpine              Up 6 weeks (healthy)   5432/tcp
 glitch-docker-proxy   tecnativa/docker-socket-proxy   Up 6 weeks             2375/tcp
@@ -46,13 +46,13 @@ glitch-redis          redis:7-alpine                  Up 6 weeks (healthy)   637
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
 127.0.0.1:14737              proc=code-1b6a188127
-127.0.0.1:30989              proc=containerd
 127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
 127.0.0.1:5001               proc=python3
 127.0.0.1:5002               proc=docker-proxy
 127.0.0.1:5004               proc=docker-proxy
 127.0.0.1:5432               proc=postgres
+127.0.0.1:5841               proc=containerd
 127.0.0.1:6000               proc=gunicorn
 127.0.0.1:8125               proc=netdata
 127.0.0.53%lo:53             proc=systemd-resolve
@@ -76,7 +76,7 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 46 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 45 days)
 ```
 
 ## Postgres databases
@@ -90,21 +90,23 @@ postgres  (7678 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   30G   18G  63% /
+/dev/root        48G   32G   16G  67% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.5Gi       449Mi       110Mi       2.2Gi       2.2Gi
-Swap:          2.0Gi       717Mi       1.3Gi
+Mem:           3.7Gi       1.8Gi       241Mi       103Mi       2.1Gi       1.9Gi
+Swap:          2.0Gi       855Mi       1.2Gi
 ```
 
 ## Project directories
 
 ```
+/home/ubuntu/.agents                           (not a git repo)
 /home/ubuntu/.android                          (not a git repo)
+/home/ubuntu/.app-store                        (not a git repo)
 /home/ubuntu/.appstoreconnect                  (not a git repo)
 /home/ubuntu/.aws                              (not a git repo)
 /home/ubuntu/.cache                            (not a git repo)
@@ -117,12 +119,15 @@ Swap:          2.0Gi       717Mi       1.3Gi
 /home/ubuntu/.cursor                           (not a git repo)
 /home/ubuntu/.cursor-server                    (not a git repo)
 /home/ubuntu/.dotnet                           (not a git repo)
+/home/ubuntu/.expo                             (not a git repo)
 /home/ubuntu/.gnupg                            (not a git repo)
 /home/ubuntu/.gradle                           (not a git repo)
 /home/ubuntu/.gunicorn                         (not a git repo)
+/home/ubuntu/.impeccable                       (not a git repo)
 /home/ubuntu/.kimi-code                        (not a git repo)
 /home/ubuntu/.local                            (not a git repo)
 /home/ubuntu/.npm                              (not a git repo)
+/home/ubuntu/.sentry                           (not a git repo)
 /home/ubuntu/.ssh                              (not a git repo)
 /home/ubuntu/.vscode-server                    (not a git repo)
 /home/ubuntu/backups                           (not a git repo)
@@ -131,6 +136,7 @@ Swap:          2.0Gi       717Mi       1.3Gi
 /home/ubuntu/glitch-trade-core                 git: git@github.com:Nuraveda-Labs/glitch-trade-core.git
 /home/ubuntu/glitch-trade-docs                 git: git@github.com:Nuraveda-Labs/glitch-trade-docs.git
 /home/ubuntu/glitch-trade-infra                git: git@github.com:Nuraveda-Labs/glitch-trade-infra.git
+/home/ubuntu/google-oauth                      (not a git repo)
 /home/ubuntu/keystores                         (not a git repo)
 /home/ubuntu/tools                             (not a git repo)
 /home/ubuntu/worktrees                         (not a git repo)
