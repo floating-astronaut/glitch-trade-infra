@@ -3,22 +3,22 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-11 03:47:01 UTC
-**Uptime:** up 6 weeks, 6 days, 2 hours, 13 minutes
-**Load avg:** 2.11, 2.06, 1.53
+**Generated:** 2026-08-12 03:47:01 UTC
+**Uptime:** up 7 weeks, 2 hours, 13 minutes
+**Load avg:** 1.98, 2.02, 2.43
 
 ## Running services (ours)
 
 ```
-  glitch-capi.service                            loaded active running Glitch Executor Unified CAPI Server
-  glitch-trade-api.service                       loaded active running Glitch Trade API (FastAPI) — FundingPips Zero progress dashboard
-  glitchexecutor-sso.service                     loaded active running Glitch Executor SSO Authentication Service
+
 ```
 
 ## Inactive / stopped (ours)
 
 ```
-(none)
+glitch-capi.service  [inactive]
+glitch-trade-api.service  [inactive]
+glitchexecutor-sso.service  [inactive]
 ```
 
 ## Failed services
@@ -41,12 +41,9 @@ NAMES     IMAGE     STATUS    PORTS
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
 127.0.0.1:14737              proc=code-1b6a188127
-127.0.0.1:3112               proc=python
 127.0.0.1:32195              proc=containerd
 127.0.0.1:4317               proc=otel-plugin
-127.0.0.1:5001               proc=python3
 127.0.0.1:5432               proc=postgres
-127.0.0.1:6000               proc=gunicorn
 127.0.0.1:8125               proc=netdata
 127.0.0.53%lo:53             proc=systemd-resolve
 127.0.0.54:53                proc=systemd-resolve
@@ -70,10 +67,10 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: dev.glitchexecutor.com
     Domains: *.dev.glitchexecutor.com
-    Expiry Date: 2026-11-06 01:02:36+00:00 (VALID: 86 days)
+    Expiry Date: 2026-11-06 01:02:36+00:00 (VALID: 85 days)
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 41 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 40 days)
 ```
 
 ## Postgres databases
@@ -88,15 +85,15 @@ sso  (8454 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   38G  9.4G  81% /
+/dev/root        48G   40G  8.2G  83% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       2.3Gi       688Mi       171Mi       1.2Gi       1.5Gi
-Swap:          2.0Gi       1.3Gi       743Mi
+Mem:           3.7Gi       1.8Gi       1.3Gi        83Mi       939Mi       1.9Gi
+Swap:          2.0Gi       1.2Gi       813Mi
 ```
 
 ## Project directories
@@ -134,6 +131,7 @@ Swap:          2.0Gi       1.3Gi       743Mi
 /home/ubuntu/.zcode                            (not a git repo)
 /home/ubuntu/admin-api-boxless                 (not a git repo)
 /home/ubuntu/backups                           (not a git repo)
+/home/ubuntu/briefs                            (not a git repo)
 /home/ubuntu/capi-boxless                      (not a git repo)
 /home/ubuntu/decommission-backup-oldbox        (not a git repo)
 /home/ubuntu/docs                              (not a git repo)
