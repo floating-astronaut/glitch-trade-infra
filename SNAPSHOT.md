@@ -3,9 +3,9 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-12 03:47:01 UTC
-**Uptime:** up 7 weeks, 2 hours, 13 minutes
-**Load avg:** 1.98, 2.02, 2.43
+**Generated:** 2026-08-13 03:47:01 UTC
+**Uptime:** up 7 weeks, 1 day, 2 hours, 13 minutes
+**Load avg:** 1.40, 2.23, 2.23
 
 ## Running services (ours)
 
@@ -67,10 +67,10 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: dev.glitchexecutor.com
     Domains: *.dev.glitchexecutor.com
-    Expiry Date: 2026-11-06 01:02:36+00:00 (VALID: 85 days)
+    Expiry Date: 2026-11-06 01:02:36+00:00 (VALID: 84 days)
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 40 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 39 days)
 ```
 
 ## Postgres databases
@@ -85,15 +85,15 @@ sso  (8454 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   40G  8.2G  83% /
+/dev/root        48G   41G  6.6G  87% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.8Gi       1.3Gi        83Mi       939Mi       1.9Gi
-Swap:          2.0Gi       1.2Gi       813Mi
+Mem:           3.7Gi       1.5Gi       1.4Gi        78Mi       1.2Gi       2.2Gi
+Swap:          2.0Gi       478Mi       1.5Gi
 ```
 
 ## Project directories
