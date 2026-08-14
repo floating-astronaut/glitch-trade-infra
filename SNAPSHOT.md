@@ -3,22 +3,22 @@
 **Auto-generated — do not edit.** Regenerated daily by `snapshot.sh` (committed by `sync.sh`).
 Hand-maintained notes live in [README.md](README.md).
 
-**Generated:** 2026-08-13 03:47:01 UTC
-**Uptime:** up 7 weeks, 1 day, 2 hours, 13 minutes
-**Load avg:** 1.40, 2.23, 2.23
+**Generated:** 2026-08-14 03:47:01 UTC
+**Uptime:** up 20 hours, 48 minutes
+**Load avg:** 0.43, 1.26, 2.53
 
 ## Running services (ours)
 
 ```
-
+  glitch-capi.service                            loaded active running Glitch Executor Unified CAPI Server
+  glitch-trade-api.service                       loaded active running Glitch Trade API (FastAPI) — FundingPips Zero progress dashboard
+  glitchexecutor-sso.service                     loaded active running Glitch Executor SSO Authentication Service
 ```
 
 ## Inactive / stopped (ours)
 
 ```
-glitch-capi.service  [inactive]
-glitch-trade-api.service  [inactive]
-glitchexecutor-sso.service  [inactive]
+(none)
 ```
 
 ## Failed services
@@ -40,10 +40,12 @@ NAMES     IMAGE     STATUS    PORTS
 0.0.0.0:22                   proc=sshd
 0.0.0.0:443                  proc=nginx
 0.0.0.0:80                   proc=nginx
-127.0.0.1:14737              proc=code-1b6a188127
-127.0.0.1:32195              proc=containerd
+127.0.0.1:14549              proc=containerd
+127.0.0.1:3112               proc=python
 127.0.0.1:4317               proc=otel-plugin
+127.0.0.1:5001               proc=python3
 127.0.0.1:5432               proc=postgres
+127.0.0.1:6000               proc=gunicorn
 127.0.0.1:8125               proc=netdata
 127.0.0.53%lo:53             proc=systemd-resolve
 127.0.0.54:53                proc=systemd-resolve
@@ -67,15 +69,16 @@ trade-api.glitchexecutor.com
 ```
   Certificate Name: dev.glitchexecutor.com
     Domains: *.dev.glitchexecutor.com
-    Expiry Date: 2026-11-06 01:02:36+00:00 (VALID: 84 days)
+    Expiry Date: 2026-11-06 01:02:36+00:00 (VALID: 83 days)
   Certificate Name: sso.glitchexecutor.com
     Domains: sso.glitchexecutor.com admin-api.glitchexecutor.com trade-api.glitchexecutor.com
-    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 39 days)
+    Expiry Date: 2026-09-22 02:00:37+00:00 (VALID: 38 days)
 ```
 
 ## Postgres databases
 
 ```
+ge_gw2_test  (14 MB)
 glitch_trade  (121 MB)
 postgres  (7678 kB)
 sso  (8454 kB)
@@ -85,15 +88,15 @@ sso  (8454 kB)
 
 ```
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root        48G   41G  6.6G  87% /
+/dev/root        48G   32G   16G  68% /
 ```
 
 ## Memory
 
 ```
                total        used        free      shared  buff/cache   available
-Mem:           3.7Gi       1.5Gi       1.4Gi        78Mi       1.2Gi       2.2Gi
-Swap:          2.0Gi       478Mi       1.5Gi
+Mem:           7.6Gi       3.2Gi       181Mi       305Mi       4.9Gi       4.5Gi
+Swap:          2.0Gi       4.0Mi       2.0Gi
 ```
 
 ## Project directories
@@ -123,6 +126,7 @@ Swap:          2.0Gi       478Mi       1.5Gi
 /home/ubuntu/.kimi-code                        (not a git repo)
 /home/ubuntu/.local                            (not a git repo)
 /home/ubuntu/.npm                              (not a git repo)
+/home/ubuntu/.npm-global                       (not a git repo)
 /home/ubuntu/.sentry                           (not a git repo)
 /home/ubuntu/.ssh                              (not a git repo)
 /home/ubuntu/.strix                            (not a git repo)
@@ -130,12 +134,12 @@ Swap:          2.0Gi       478Mi       1.5Gi
 /home/ubuntu/.vscode-server                    (not a git repo)
 /home/ubuntu/.zcode                            (not a git repo)
 /home/ubuntu/admin-api-boxless                 (not a git repo)
+/home/ubuntu/agent                             (not a git repo)
 /home/ubuntu/backups                           (not a git repo)
 /home/ubuntu/briefs                            (not a git repo)
 /home/ubuntu/capi-boxless                      (not a git repo)
 /home/ubuntu/decommission-backup-oldbox        (not a git repo)
 /home/ubuntu/docs                              (not a git repo)
-/home/ubuntu/docs-work                         git: git@github.com:Nuraveda-Labs/glitch-trade-docs.git
 /home/ubuntu/glitch-trade-app                  git: git@github.com:Nuraveda-Labs/glitch-trade-app.git
 /home/ubuntu/glitch-trade-core                 git: git@github.com:Nuraveda-Labs/glitch-trade-core.git
 /home/ubuntu/glitch-trade-docs                 git: git@github.com:Nuraveda-Labs/glitch-trade-docs.git
@@ -143,6 +147,7 @@ Swap:          2.0Gi       478Mi       1.5Gi
 /home/ubuntu/google-oauth                      (not a git repo)
 /home/ubuntu/keystores                         (not a git repo)
 /home/ubuntu/payment-boxless                   (not a git repo)
+/home/ubuntu/play-tools                        (not a git repo)
 /home/ubuntu/security-audit-skill              (not a git repo)
 /home/ubuntu/sso-ci-work                       git: git@github.com:Nuraveda-Labs/glitchexecutor-sso.git
 /home/ubuntu/strix-report-glitchexecutor-20260809  (not a git repo)
